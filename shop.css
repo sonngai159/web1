@@ -1,0 +1,26 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;600;700;800&display=swap');
+/*===== BASE =====*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    color: #0E2431;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.bar a{
+    font-size: 15px;
+}
+.bar{
+    padding: 110px 0 1rem 1rem ;
+}
