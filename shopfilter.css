@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.ok{
+    width:100%;
+    background-color: coral;
+    height:100px;
+}
+.select__box{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin-left:25%;
+    position: absolute;
+    top:4rem;
+    left:-4rem;
+}
+.box1{
+    background-color: blueviolet;
+    color:white;
+    font-size: 1.2rem;
+    padding:1rem .5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:8px;
+    border-radius: 3px;
+}
+.box2{
+    background-color: blueviolet;
+    color:white;
+    font-size: 1.2rem;
+    padding:1rem .5rem;
+    border-radius: 3px;
+    overflow-y: scroll;
+    height:200px;
+    transition: all 0.4s;
+    height: 0px;
+    opacity:0;
+}
+.option{
+    padding:.5rem;
+    margin-bottom:.5rem;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: brown;
+}
+.show{
+    height: 200px;
+    opacity: 1;
+}
+.selected{
+    cursor: pointer;
+}
+
+.nav__link:hover{
+    position: relative;
+}
+.nav__link{
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+.active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: #4070F4;
+}
+.okle{
+    width:50px;
+    height:50px;
+    
+    background-color: cadetblue;
+    z-index: -1;
+}

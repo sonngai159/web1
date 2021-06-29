@@ -24,3 +24,12 @@ a{
 .bar{
     padding: 110px 0 1rem 1rem ;
 }
+
+/*===== DROP DOWN =====*/
+.btn{
+    background-color: blanchedalmond !important;
+    color:black !important;
+    border-radius: 1px solid grey!important;
+    outline: none !important;
+    box-shadow: none !important;
+}
