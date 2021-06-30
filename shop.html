@@ -8,12 +8,6 @@
     
     <!-- ===== JQUERY ===== -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <!-- ===== BOOTSTRAP CSS ===== -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <!-- ===== BOOTSTRAP JS ===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
     <title>Document</title>
 </head>
@@ -34,21 +28,83 @@
     <div class="bar">
         <a href="web1.html">Home</a> / <a href="shop.html">Shop</a>
     </div>
+
     <div class="filter">
-        <i class='bx bx-filter-alt'></i>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
+        <i class='bx bx-filter-alt filler__icon'></i>
+        <div class="sort" id="sort-id">
+            <div class="sort__icon" id="sort-icon">
+                <p class="sort__label">Sort By</p>
+                <i class='bx bx-chevron-down sort__down'></i>
+            </div>
+            <div class="sort__dropdown" id="sort-dropdown-id">
+                <p class="option">Feature</p>
+                <p class="option">Price, low to high</p>
+                <p class="option">Price, high to low</p>
+                <p class="option">Best selling</p>
+            </div> 
+        </div>
     </div>
+    
+    <!-- ===== SHOP PRODUCT ===== -->
+    <section class="best__seller">
+        <p class="best__seller__title">Best Seller</p>
+        <div class="product">
+            <div class="product1 pro">
+                <div class="product__body">
+                    <img src="img/product1.jpeg" alt="">
+                    <div class="product__button">
+                        <a href="#">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="product__bottom">
+                    <p class="product__name">Ariel Sinaloa</p>
+                    <p class="product__price">$400</p>
+                </div>
+            </div>
+            <div class="product2 pro">
+                <div class="product__body">
+                    <img src="img/product2.jpeg" alt="">
+                    <div class="product__button">
+                        <a href="#">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="product__bottom">
+                    <p class="product__name">Ariel Sinaloa</p>
+                    <p class="product__price">$500</p>
+                </div>
+            </div>
+            <div class="product3 pro">
+                <div class="product__body">
+                    <img src="img/product3.jpeg" alt="">
+                    <div class="product__button">
+                        <a href="#">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="product__bottom">
+                    <p class="product__name">Ariel Sinaloa</p>
+                    <p class="product__price">$300</p>
+                </div>
+            </div>
+            <div class="product4 pro">
+                <div class="product__body">
+                    <img src="img/product4.jpeg" alt="">
+                    <div class="product__button">
+                        <a href="#">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="product__bottom">
+                    <p class="product__name">Ariel Sinaloa</p>
+                    <p class="product__price">$700</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
 
-    <div id="footer"></div>
+    
    
    <!-- ===== JS FOOTER ===== -->
    <script>
@@ -56,5 +112,7 @@
             $("#footer").load("text.html"); 
         });
     </script>
+
+    <script src="shop.js"></script>
 </body>
 </html>

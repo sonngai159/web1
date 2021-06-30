@@ -8,12 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    font-family: 'Jost', sans-serif;
-    font-size: 1rem;
-    color: #0E2431;
-    margin: 0;
-}
+
 a{
     text-decoration: none;
     color:black;
@@ -26,10 +21,104 @@ a{
 }
 
 /*===== DROP DOWN =====*/
-.btn{
-    background-color: blanchedalmond !important;
-    color:black !important;
-    border-radius: 1px solid grey!important;
-    outline: none !important;
-    box-shadow: none !important;
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom:2rem; 
+    font-family: 'Jost' !important;
+}
+.filler__icon{
+    font-size:1.5rem;
+    position: relative;
+    padding-top:.5rem;
+    -webkit-text-stroke: .7px white;
+}
+.sort{
+    font-size:15px;
+}
+.sort__icon{
+    cursor:pointer;
+    width:140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px 6px 15px;
+    border:1px solid #dadada;
+}
+.sort__dropdown{
+    width:140px;
+    position:absolute;
+    top:11.7rem;
+    border:1px solid #dadada;
+    margin-top:0.5rem;
+    display:none;
+    background-color: #ffffff;
+    font-size:13px;
+    padding-left: 1rem;
+}
+.dropdown__show{
+    display: flex;
+    flex-direction: column;
+
+}
+.option{
+    margin:.5rem 0;
+}
+
+/*===== SHOP PRODUCT =====*/
+.best__seller{
+    margin: 0 2.5%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:3rem;
+}
+.best__seller__title{
+    font-size:1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:5%;
+}
+.product__button{
+    border:1px solid grey;
+    border-radius: 3px;
+    height:2.5rem;
+    position: relative;
+    top:-1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Jost';
+    font-size:15px;
+    font-weight:600;
+}
+.product__button a{
+    text-decoration: none;
+    color:black;
+    font-weight:600;
+}
+.product__bottom{
+    text-align: center;
+    position: relative;
+    top:-1.5rem;
+}
+.product__name{
+    font-family: 'Jost', 'Ariel',sans-serif;
+    font-weight:500;
+    font-size:16px;
+}
+.product__price{
+    font-family: 'Jost', sans-serif;
+    font-weight:600;
+    font-size:1rem;
+    color:red;
 }
